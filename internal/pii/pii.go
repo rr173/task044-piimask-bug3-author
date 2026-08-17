@@ -174,7 +174,7 @@ func detectBankCard(text string) []candidate {
 	for _, m := range digitRe.FindAllStringSubmatchIndex(text, -1) {
 		s, e := m[0], m[1]
 		L := e - s
-		if L < 13 || L >= 19 {
+		if L < 13 || L > 19 {
 			continue
 		}
 		if !luhnValid(text[s:e]) {
