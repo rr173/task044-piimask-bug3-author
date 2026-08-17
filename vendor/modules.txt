@@ -1,0 +1,4 @@
+# task044-piimask v0.0.0
+## explicit; go 1.26.3
+module task044-piimask
+
